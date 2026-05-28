@@ -1,30 +1,33 @@
 # -*- mode: python ; coding: utf-8 -*-
-# PyInstaller spec — WK Pool 2026
+# PyInstaller spec — WK Pool 2026 (compatibel met PyInstaller 6.x)
 # schema.json zit NIET in de exe; hij moet naast de exe staan.
 
-block_cipher = None
+from PyInstaller.utils.hooks import collect_all
+
+flask_datas, flask_bins, flask_hidden = collect_all('flask')
+wz_datas, wz_bins, wz_hidden = collect_all('werkzeug')
+jinja_datas, jinja_bins, jinja_hidden = collect_all('jinja2')
 
 a = Analysis(
     ['main.py'],
     pathex=[],
-    binaries=[],
-    datas=[],
-    hiddenimports=[
+    binaries=flask_bins + wz_bins + jinja_bins,
+    datas=flask_datas + wz_datas + jinja_datas,
+    hiddenimports=flask_hidden + wz_hidden + jinja_hidden + [
         'flask', 'werkzeug', 'werkzeug.serving', 'werkzeug.exceptions',
         'werkzeug.routing', 'werkzeug.wrappers', 'werkzeug.middleware',
-        'click', 'jinja2', 'itsdangerous', 'tkinter',
+        'werkzeug.middleware.proxy_fix',
+        'click', 'jinja2', 'itsdangerous', 'itsdangerous.url_safe',
+        'tkinter', '_tkinter', 'tkinter.ttk', 'tkinter.messagebox',
     ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=['matplotlib', 'numpy', 'pandas', 'scipy', 'PIL'],
-    win_no_prefer_redirects=False,
-    win_private_assemblies=False,
-    cipher=block_cipher,
     noarchive=False,
 )
 
-pyz = PYZ(a.pure, a.ztos, cipher=block_cipher)
+pyz = PYZ(a.pure)
 
 exe = EXE(
     pyz,
@@ -40,7 +43,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,          # Geen zwart venster
+    console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
