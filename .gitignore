@@ -1,0 +1,5 @@
+wk_pool_data.dat
+__pycache__/
+*.pyc
+dist/
+build/
