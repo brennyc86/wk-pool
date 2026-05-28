@@ -1,0 +1,152 @@
+{
+  "toernooi": "FIFA Wereldkampioenschap 2026",
+  "locaties": ["Verenigde Staten", "Canada", "Mexico"],
+  "datum_start": "2026-06-11",
+  "datum_einde": "2026-07-19",
+  "groepen": [
+    {
+      "naam": "Groep A",
+      "teams": ["Mexico", "Zuid-Afrika", "Zuid-Korea", "Tsjechië"],
+      "wedstrijden": [
+        {"id": "A1", "datum": "2026-06-11", "tijd": "21:00", "thuis": "Mexico",      "uit": "Zuid-Afrika"},
+        {"id": "A2", "datum": "2026-06-12", "tijd": "04:00", "thuis": "Zuid-Korea",  "uit": "Tsjechië"},
+        {"id": "A3", "datum": "2026-06-18", "tijd": "18:00", "thuis": "Tsjechië",    "uit": "Zuid-Afrika"},
+        {"id": "A4", "datum": "2026-06-19", "tijd": "03:00", "thuis": "Mexico",      "uit": "Zuid-Korea"},
+        {"id": "A5", "datum": "2026-06-25", "tijd": "03:00", "thuis": "Zuid-Afrika", "uit": "Zuid-Korea"},
+        {"id": "A6", "datum": "2026-06-25", "tijd": "03:00", "thuis": "Tsjechië",    "uit": "Mexico"}
+      ]
+    },
+    {
+      "naam": "Groep B",
+      "teams": ["Canada", "Bosnië-Herzegovina", "Qatar", "Zwitserland"],
+      "wedstrijden": [
+        {"id": "B1", "datum": "2026-06-12", "tijd": "21:00", "thuis": "Canada",             "uit": "Bosnië-Herzegovina"},
+        {"id": "B2", "datum": "2026-06-13", "tijd": "21:00", "thuis": "Qatar",              "uit": "Zwitserland"},
+        {"id": "B3", "datum": "2026-06-18", "tijd": "21:00", "thuis": "Zwitserland",        "uit": "Bosnië-Herzegovina"},
+        {"id": "B4", "datum": "2026-06-19", "tijd": "00:00", "thuis": "Canada",             "uit": "Qatar"},
+        {"id": "B5", "datum": "2026-06-24", "tijd": "21:00", "thuis": "Zwitserland",        "uit": "Canada"},
+        {"id": "B6", "datum": "2026-06-24", "tijd": "21:00", "thuis": "Bosnië-Herzegovina", "uit": "Qatar"}
+      ]
+    },
+    {
+      "naam": "Groep C",
+      "teams": ["Brazilië", "Marokko", "Haïti", "Schotland"],
+      "wedstrijden": [
+        {"id": "C1", "datum": "2026-06-14", "tijd": "00:00", "thuis": "Brazilië", "uit": "Marokko"},
+        {"id": "C2", "datum": "2026-06-14", "tijd": "03:00", "thuis": "Haïti",    "uit": "Schotland"},
+        {"id": "C3", "datum": "2026-06-20", "tijd": "00:00", "thuis": "Schotland","uit": "Marokko"},
+        {"id": "C4", "datum": "2026-06-20", "tijd": "02:30", "thuis": "Brazilië", "uit": "Haïti"},
+        {"id": "C5", "datum": "2026-06-25", "tijd": "00:00", "thuis": "Marokko",  "uit": "Haïti"},
+        {"id": "C6", "datum": "2026-06-25", "tijd": "00:00", "thuis": "Schotland","uit": "Brazilië"}
+      ]
+    },
+    {
+      "naam": "Groep D",
+      "teams": ["VS", "Paraguay", "Australië", "Turkije"],
+      "wedstrijden": [
+        {"id": "D1", "datum": "2026-06-13", "tijd": "03:00", "thuis": "VS",        "uit": "Paraguay"},
+        {"id": "D2", "datum": "2026-06-14", "tijd": "06:00", "thuis": "Australië", "uit": "Turkije"},
+        {"id": "D3", "datum": "2026-06-19", "tijd": "21:00", "thuis": "VS",        "uit": "Australië"},
+        {"id": "D4", "datum": "2026-06-20", "tijd": "05:00", "thuis": "Turkije",   "uit": "Paraguay"},
+        {"id": "D5", "datum": "2026-06-26", "tijd": "04:00", "thuis": "Turkije",   "uit": "VS"},
+        {"id": "D6", "datum": "2026-06-26", "tijd": "04:00", "thuis": "Paraguay",  "uit": "Australië"}
+      ]
+    },
+    {
+      "naam": "Groep E",
+      "teams": ["Duitsland", "Curaçao", "Ivoorkust", "Ecuador"],
+      "wedstrijden": [
+        {"id": "E1", "datum": "2026-06-14", "tijd": "19:00", "thuis": "Duitsland",  "uit": "Curaçao"},
+        {"id": "E2", "datum": "2026-06-15", "tijd": "01:00", "thuis": "Ivoorkust",  "uit": "Ecuador"},
+        {"id": "E3", "datum": "2026-06-20", "tijd": "22:00", "thuis": "Duitsland",  "uit": "Ivoorkust"},
+        {"id": "E4", "datum": "2026-06-21", "tijd": "02:00", "thuis": "Ecuador",    "uit": "Curaçao"},
+        {"id": "E5", "datum": "2026-06-25", "tijd": "22:00", "thuis": "Curaçao",    "uit": "Ivoorkust"},
+        {"id": "E6", "datum": "2026-06-25", "tijd": "22:00", "thuis": "Ecuador",    "uit": "Duitsland"}
+      ]
+    },
+    {
+      "naam": "Groep F",
+      "teams": ["Nederland", "Japan", "Zweden", "Tunesië"],
+      "wedstrijden": [
+        {"id": "F1", "datum": "2026-06-14", "tijd": "22:00", "thuis": "Nederland", "uit": "Japan"},
+        {"id": "F2", "datum": "2026-06-15", "tijd": "04:00", "thuis": "Zweden",    "uit": "Tunesië"},
+        {"id": "F3", "datum": "2026-06-20", "tijd": "19:00", "thuis": "Nederland", "uit": "Zweden"},
+        {"id": "F4", "datum": "2026-06-21", "tijd": "06:00", "thuis": "Tunesië",   "uit": "Japan"},
+        {"id": "F5", "datum": "2026-06-26", "tijd": "01:00", "thuis": "Tunesië",   "uit": "Nederland"},
+        {"id": "F6", "datum": "2026-06-26", "tijd": "01:00", "thuis": "Japan",     "uit": "Zweden"}
+      ]
+    },
+    {
+      "naam": "Groep G",
+      "teams": ["België", "Egypte", "Iran", "Nieuw-Zeeland"],
+      "wedstrijden": [
+        {"id": "G1", "datum": "2026-06-15", "tijd": "21:00", "thuis": "België",       "uit": "Egypte"},
+        {"id": "G2", "datum": "2026-06-16", "tijd": "03:00", "thuis": "Iran",         "uit": "Nieuw-Zeeland"},
+        {"id": "G3", "datum": "2026-06-21", "tijd": "21:00", "thuis": "België",       "uit": "Iran"},
+        {"id": "G4", "datum": "2026-06-22", "tijd": "03:00", "thuis": "Nieuw-Zeeland","uit": "Egypte"},
+        {"id": "G5", "datum": "2026-06-27", "tijd": "05:00", "thuis": "Nieuw-Zeeland","uit": "België"},
+        {"id": "G6", "datum": "2026-06-27", "tijd": "05:00", "thuis": "Egypte",       "uit": "Iran"}
+      ]
+    },
+    {
+      "naam": "Groep H",
+      "teams": ["Spanje", "Kaapverdië", "Saudi-Arabië", "Uruguay"],
+      "wedstrijden": [
+        {"id": "H1", "datum": "2026-06-15", "tijd": "18:00", "thuis": "Spanje",       "uit": "Kaapverdië"},
+        {"id": "H2", "datum": "2026-06-16", "tijd": "00:00", "thuis": "Saudi-Arabië", "uit": "Uruguay"},
+        {"id": "H3", "datum": "2026-06-21", "tijd": "18:00", "thuis": "Spanje",       "uit": "Saudi-Arabië"},
+        {"id": "H4", "datum": "2026-06-22", "tijd": "00:00", "thuis": "Uruguay",      "uit": "Kaapverdië"},
+        {"id": "H5", "datum": "2026-06-27", "tijd": "02:00", "thuis": "Kaapverdië",   "uit": "Saudi-Arabië"},
+        {"id": "H6", "datum": "2026-06-27", "tijd": "02:00", "thuis": "Uruguay",      "uit": "Spanje"}
+      ]
+    },
+    {
+      "naam": "Groep I",
+      "teams": ["Frankrijk", "Senegal", "Irak", "Noorwegen"],
+      "wedstrijden": [
+        {"id": "I1", "datum": "2026-06-16", "tijd": "21:00", "thuis": "Frankrijk", "uit": "Senegal"},
+        {"id": "I2", "datum": "2026-06-17", "tijd": "00:00", "thuis": "Irak",      "uit": "Noorwegen"},
+        {"id": "I3", "datum": "2026-06-22", "tijd": "23:00", "thuis": "Frankrijk", "uit": "Irak"},
+        {"id": "I4", "datum": "2026-06-23", "tijd": "02:00", "thuis": "Noorwegen", "uit": "Senegal"},
+        {"id": "I5", "datum": "2026-06-26", "tijd": "21:00", "thuis": "Noorwegen", "uit": "Frankrijk"},
+        {"id": "I6", "datum": "2026-06-26", "tijd": "21:00", "thuis": "Senegal",   "uit": "Irak"}
+      ]
+    },
+    {
+      "naam": "Groep J",
+      "teams": ["Argentinië", "Algerije", "Oostenrijk", "Jordanië"],
+      "wedstrijden": [
+        {"id": "J1", "datum": "2026-06-17", "tijd": "03:00", "thuis": "Argentinië", "uit": "Algerije"},
+        {"id": "J2", "datum": "2026-06-17", "tijd": "06:00", "thuis": "Oostenrijk", "uit": "Jordanië"},
+        {"id": "J3", "datum": "2026-06-22", "tijd": "19:00", "thuis": "Argentinië", "uit": "Oostenrijk"},
+        {"id": "J4", "datum": "2026-06-23", "tijd": "05:00", "thuis": "Jordanië",   "uit": "Algerije"},
+        {"id": "J5", "datum": "2026-06-28", "tijd": "04:00", "thuis": "Algerije",   "uit": "Oostenrijk"},
+        {"id": "J6", "datum": "2026-06-28", "tijd": "04:00", "thuis": "Jordanië",   "uit": "Argentinië"}
+      ]
+    },
+    {
+      "naam": "Groep K",
+      "teams": ["Portugal", "Congo DR", "Oezbekistan", "Colombia"],
+      "wedstrijden": [
+        {"id": "K1", "datum": "2026-06-17", "tijd": "19:00", "thuis": "Portugal",    "uit": "Congo DR"},
+        {"id": "K2", "datum": "2026-06-18", "tijd": "04:00", "thuis": "Oezbekistan", "uit": "Colombia"},
+        {"id": "K3", "datum": "2026-06-23", "tijd": "19:00", "thuis": "Portugal",    "uit": "Oezbekistan"},
+        {"id": "K4", "datum": "2026-06-24", "tijd": "04:00", "thuis": "Colombia",    "uit": "Congo DR"},
+        {"id": "K5", "datum": "2026-06-28", "tijd": "01:30", "thuis": "Colombia",    "uit": "Portugal"},
+        {"id": "K6", "datum": "2026-06-28", "tijd": "01:30", "thuis": "Congo DR",    "uit": "Oezbekistan"}
+      ]
+    },
+    {
+      "naam": "Groep L",
+      "teams": ["Engeland", "Kroatië", "Ghana", "Panama"],
+      "wedstrijden": [
+        {"id": "L1", "datum": "2026-06-17", "tijd": "22:00", "thuis": "Engeland", "uit": "Kroatië"},
+        {"id": "L2", "datum": "2026-06-18", "tijd": "01:00", "thuis": "Ghana",    "uit": "Panama"},
+        {"id": "L3", "datum": "2026-06-23", "tijd": "22:00", "thuis": "Engeland", "uit": "Ghana"},
+        {"id": "L4", "datum": "2026-06-24", "tijd": "01:00", "thuis": "Panama",   "uit": "Kroatië"},
+        {"id": "L5", "datum": "2026-06-27", "tijd": "23:00", "thuis": "Panama",   "uit": "Engeland"},
+        {"id": "L6", "datum": "2026-06-27", "tijd": "23:00", "thuis": "Kroatië",  "uit": "Ghana"}
+      ]
+    }
+  ]
+}
