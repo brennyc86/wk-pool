@@ -55,6 +55,16 @@ jobs:
           git push
         shell: cmd
 
+      - name: GitHub Release publiceren
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: cmd
+        run: |
+          gh release delete latest --yes 2>nul || echo Geen vorige release gevonden
+          git tag -d latest 2>nul || echo Geen lokale tag
+          git push origin :refs/tags/latest 2>nul || echo Geen remote tag
+          gh release create latest release\WK_Pool_2026.zip --title "WK Pool 2026 - Nieuwste versie" --notes "**Download:** klik op `WK_Pool_2026.zip` hieronder, pak uit en zet `WK_Pool_2026.exe` en `schema.json` in dezelfde map. Dubbelklik op de EXE om te starten." --latest
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
