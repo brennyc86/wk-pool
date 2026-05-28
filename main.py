@@ -506,7 +506,7 @@ function showLogin() {
 
 function showApp() {
   document.getElementById('login-screen').style.display = 'none';
-  document.getElementById('app').style.display = '';
+  document.getElementById('app').style.display = 'block';
   document.getElementById('topbar-naam').textContent = currentUser;
   showTab(currentTab);
 }
