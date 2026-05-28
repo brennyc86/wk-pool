@@ -1,0 +1,63 @@
+name: Build WK Pool EXE
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'main.py'
+      - 'schema.json'
+      - 'wk_pool.spec'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Afhankelijkheden installeren
+        run: pip install flask pyinstaller
+
+      - name: EXE bouwen
+        run: pyinstaller wk_pool.spec
+
+      - name: Release map aanmaken
+        run: |
+          mkdir release
+          copy dist\WK_Pool_2026.exe release\WK_Pool_2026.exe
+          copy schema.json release\schema.json
+
+      - name: ZIP aanmaken
+        run: |
+          powershell Compress-Archive -Path release\* -DestinationPath release\WK_Pool_2026.zip
+
+      - name: EXE committen naar repo
+        run: |
+          git config user.name  "GitHub Actions"
+          git config user.email "actions@github.com"
+          git pull --rebase
+          if not exist "exe" mkdir exe
+          copy dist\WK_Pool_2026.exe exe\WK_Pool_2026.exe
+          copy schema.json exe\schema.json
+          git add exe\WK_Pool_2026.exe exe\schema.json
+          git diff --staged --quiet || git commit -m "ci: WK Pool 2026 EXE bijgewerkt"
+          git push
+        shell: cmd
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WK_Pool_2026
+          path: release/WK_Pool_2026.zip
+          retention-days: 30
